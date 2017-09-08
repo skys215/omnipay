@@ -460,6 +460,7 @@ try {
   
   When implementing with multiple gateways you should use a construct along the lines of the following:
   
+  ```php
   if ($is_developer_mode) 
   {
     if (method_exists($gateway, 'setDeveloperMode')) {
@@ -468,7 +469,8 @@ try {
       $gateway->setTestMode(TRUE);
     } 
   }
-
+  ```
+  
 ## Token Billing
 
 Token billing allows you to store a credit card with your gateway, and charge it at a later date.
